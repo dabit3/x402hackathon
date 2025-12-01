@@ -10,6 +10,11 @@
     />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="apple-touch-icon" href="images/favicon.ico" />
+    <!-- Preload custom font to prevent FOUT -->
+    <link rel="preload" href="./fonts/TINY5x3-160.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
@@ -39,7 +44,22 @@
         src: url('./fonts/TINY5x3-160.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
-        font-display: swap;
+        font-display: block;
+      }
+      /* Ensure background colors are applied immediately (not relying on Tailwind) */
+      html {
+        background-color: #030616;
+      }
+      body {
+        background-color: #1E243C;
+      }
+      /* Prevent FOUT by hiding content until fonts load */
+      .fonts-loading > *:not(script) {
+        opacity: 0;
+      }
+      .fonts-loaded > *:not(script) {
+        opacity: 1;
+        transition: opacity 0.2s ease-in;
       }
       h1.font-tiny160 {
         font-family: 'Tiny 160', monospace;
@@ -73,7 +93,27 @@
       </filter>
     </svg>
   </head>
-  <body class="relative min-h-screen bg-[#1E243C] text-slate-50 font-sans antialiased overscroll-none overflow-x-hidden">
+  <body class="fonts-loading relative min-h-screen bg-[#1E243C] text-slate-50 font-sans antialiased overscroll-none overflow-x-hidden">
+    <script>
+      // Wait for fonts to load before showing content to prevent FOUT
+      (function() {
+        var showContent = function() {
+          document.body.classList.remove('fonts-loading');
+          document.body.classList.add('fonts-loaded');
+        };
+        
+        // Use Font Loading API if available
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(showContent);
+        } else {
+          // Fallback for older browsers
+          showContent();
+        }
+        
+        // Safety timeout - always show content after 1.5s max
+        setTimeout(showContent, 1500);
+      })();
+    </script>
     <div id="matrixLayer" class="matrix-layer"></div>
     <header class="sticky top-0 z-30 w-full px-6 py-5 backdrop-blur-2xl ">
       <div class="mx-auto flex w-full max-w-6xl items-center justify-between">
