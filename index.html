@@ -442,9 +442,9 @@
             <div class="absolute bottom-0 left-0 w-48 h-48 bg-brand-indigo/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
             <div class="relative z-10">
               <div class="flex flex-col gap-2 mb-6">
-                <p data-scramble class="text-sm uppercase tracking-[0.35em] text-brand-cyan/80">Get Started</p>
-                <h2 data-scramble class="text-2xl font-semibold text-white sm:text-3xl">Developer Resources</h2>
-                <p class="text-base text-slate-300 max-w-2xl">
+                <p data-scramble class="text-sm uppercase tracking-[0.35em] text-brand-cyan/80" data-i18n="devResources.label">Get Started</p>
+                <h2 data-scramble class="text-2xl font-semibold text-white sm:text-3xl" data-i18n="devResources.heading">Developer Resources</h2>
+                <p class="text-base text-slate-300 max-w-2xl" data-i18n="devResources.description">
                   Use these resources to bootstrap your project and integrate x402 in novel ways.
                 </p>
               </div>
@@ -464,23 +464,23 @@
                        </svg>
                      </div>
                      <div>
-                       <h3 class="text-lg font-semibold text-white group-hover:text-emerald-400 transition-colors">Builder Resources</h3>
-                       <p class="text-xs text-slate-400 font-mono">From Contributors</p>
+                       <h3 class="text-lg font-semibold text-white group-hover:text-emerald-400 transition-colors" data-i18n="devResources.builderResources.title">Builder Resources</h3>
+                       <p class="text-xs text-slate-400 font-mono" data-i18n="devResources.builderResources.subtitle">From Contributors</p>
                      </div>
                    </div>
                    <svg class="h-5 w-5 text-slate-500 group-hover:text-emerald-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
                    </svg>
                  </div>
-                 <p class="text-sm text-slate-300 leading-relaxed">
+                 <p class="text-sm text-slate-300 leading-relaxed" data-i18n="devResources.builderResources.description">
                    Curated docs, tutorials, and tooling from hackathon contributors and their companies to help you build faster.
                  </p>
                  <div class="flex items-center gap-2 mt-auto pt-2">
                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-slate-400">
                      <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-                     Docs & Guides
+                     <span data-i18n="devResources.builderResources.tag1">Docs & Guides</span>
                    </span>
-                   <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-slate-400">
+                   <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-slate-400" data-i18n="devResources.builderResources.tag2">
                      Contributor Tools
                    </span>
                  </div>
@@ -508,15 +508,15 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
                     </svg>
                   </div>
-                  <p class="text-sm text-slate-300 leading-relaxed">
+                  <p class="text-sm text-slate-300 leading-relaxed" data-i18n="devResources.createX402.description">
                     The fastest way to scaffold a new x402 project. One command to generate a fully configured payment-enabled application with all the essentials.
                   </p>
                   <div class="flex items-center gap-2 mt-auto pt-2">
                     <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-slate-400">
                       <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-                      CLI Tool
+                      <span data-i18n="devResources.createX402.tag1">CLI Tool</span>
                     </span>
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-slate-400">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-slate-400" data-i18n="devResources.createX402.tag2">
                       Quick Start
                     </span>
                   </div>
@@ -538,14 +538,14 @@
                       </div>
                       <div>
                         <h3 class="text-lg font-semibold text-white group-hover:text-brand-indigo transition-colors">x402 Starter Kit</h3>
-                        <p class="text-xs text-slate-400 font-mono">Full Template</p>
+                        <p class="text-xs text-slate-400 font-mono" data-i18n="devResources.starterKit.subtitle">Full Template</p>
                       </div>
                     </div>
                     <svg class="h-5 w-5 text-slate-500 group-hover:text-brand-indigo group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
                     </svg>
                   </div>
-                  <p class="text-sm text-slate-300 leading-relaxed">
+                  <p class="text-sm text-slate-300 leading-relaxed" data-i18n="devResources.starterKit.description">
                     A complete reference implementation with Express server, payment verification, OpenAI integration, and local or facilitator settlement modes.
                   </p>
                   <div class="flex items-center gap-2 mt-auto pt-2">
@@ -553,7 +553,7 @@
                       <span class="h-1.5 w-1.5 rounded-full bg-yellow-400"></span>
                       TypeScript
                     </span>
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-slate-400">
+                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/5 border border-white/10 px-2.5 py-1 text-xs text-slate-400" data-i18n="devResources.starterKit.tag2">
                       Reference App
                     </span>
                   </div>

@@ -23,6 +23,28 @@
     "heading": "Experts who ship with you",
     "description": "A tight roster of hands-on mentors sharing expertise across product, AI, infrastructure, and GTM."
   },
+  "devResources": {
+    "label": "Get Started",
+    "heading": "Developer Resources",
+    "description": "Use these resources to bootstrap your project and integrate x402 in novel ways.",
+    "builderResources": {
+      "title": "Builder Resources",
+      "subtitle": "From Contributors",
+      "description": "Curated docs, tutorials, and tooling from hackathon contributors and their companies to help you build faster.",
+      "tag1": "Docs & Guides",
+      "tag2": "Contributor Tools"
+    },
+    "createX402": {
+      "description": "The fastest way to scaffold a new x402 project. One command to generate a fully configured payment-enabled application with all the essentials.",
+      "tag1": "CLI Tool",
+      "tag2": "Quick Start"
+    },
+    "starterKit": {
+      "subtitle": "Full Template",
+      "description": "A complete reference implementation with Express server, payment verification, OpenAI integration, and local or facilitator settlement modes.",
+      "tag2": "Reference App"
+    }
+  },
   "formatSection": {
     "heading": "Format",
     "description": "A 4 week virtual event focused on shipping real products, apps, and impactful open source. Participants will receive mentorship from industry experts. \n \n Please note that there are no financial prizes for this hackathon. Winners will receive marketing and distribution support from contributors such as social posts and live streams. They will also have access to mentorship, invitations to major events and hacker houses, and potential grant opportunities.",

@@ -23,6 +23,28 @@
     "heading": "Especialistas que constroem com voce",
     "description": "Uma equipe seleta de mentores praticos compartilhando experiencia em produto, IA, infraestrutura e GTM."
   },
+  "devResources": {
+    "label": "Comecar",
+    "heading": "Recursos para Desenvolvedores",
+    "description": "Use estes recursos para iniciar seu projeto e integrar x402 de formas inovadoras.",
+    "builderResources": {
+      "title": "Recursos para Construtores",
+      "subtitle": "Dos Colaboradores",
+      "description": "Documentacao, tutoriais e ferramentas selecionadas dos colaboradores do hackathon e suas empresas para ajudar voce a construir mais rapido.",
+      "tag1": "Docs e Guias",
+      "tag2": "Ferramentas dos Colaboradores"
+    },
+    "createX402": {
+      "description": "A forma mais rapida de criar um novo projeto x402. Um comando para gerar uma aplicacao totalmente configurada com pagamentos habilitados.",
+      "tag1": "Ferramenta CLI",
+      "tag2": "Inicio Rapido"
+    },
+    "starterKit": {
+      "subtitle": "Template Completo",
+      "description": "Uma implementacao de referencia completa com servidor Express, verificacao de pagamentos, integracao OpenAI e modos de liquidacao local ou com facilitador.",
+      "tag2": "App de Referencia"
+    }
+  },
   "formatSection": {
     "heading": "Formato",
     "description": "Um evento virtual de 4 semanas focado em lancar produtos reais, aplicativos e codigo aberto impactante. Os participantes receberao mentoria de especialistas da industria. Por favor, note que nao ha premios financeiros para este hackathon. Os vencedores receberao suporte de marketing e distribuicao dos colaboradores, como postagens em redes sociais e transmissoes ao vivo. Eles tambem terao acesso a mentoria, convites para eventos importantes e hacker houses, e oportunidades potenciais de grants.",
